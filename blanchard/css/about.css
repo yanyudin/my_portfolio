@@ -1,0 +1,22 @@
+.about {
+  margin-bottom: 70px;
+}
+
+.about__description {
+  max-width: 1080px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .about__description {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

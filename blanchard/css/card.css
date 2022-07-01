@@ -1,0 +1,91 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    font-size: 0;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.card__pic {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 0;
+}
+
+.card__caption {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__text--small {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #999;
+}
+
+.card__date {
+    display: block;
+}
+
+.card__heading {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--text-color);
+}
+
+.card__heading--small {
+    display: block;
+    font-size: 16px;
+}
+
+.card__description {
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--text-color);
+}
+
+.card__link {
+    position: relative;
+    align-self: flex-start;
+    margin-top: auto;
+    margin-left: -8px;
+    padding: 8px;
+    background: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: var(--normal-color);
+    transition: color var(--transition),
+        background-color var(--transition);
+}
+
+.card__link:hover {
+    background: initial;
+    color: var(--dark-color);
+}
+
+.card__link:focus {
+    background-color: var(--normal-color);
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.card__link:active {
+    background: initial;
+    color: inherit;
+}
+
+.card__btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
