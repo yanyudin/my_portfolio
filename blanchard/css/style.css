@@ -167,6 +167,7 @@ ul {
   background-color: #ECECEC;
   border: 2px solid #ECECEC;
   outline: none;
+  font-size: 0;
   transition: background-color var(--transition), border-color var(--transition);
 }
 
