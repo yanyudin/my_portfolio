@@ -242,8 +242,20 @@
 }
 
 @media (max-width: 1023px) {
+  .catalog {
+    margin-bottom: 69px;
+  }
+
+  .catalog__description {
+    margin-bottom: 19px;
+  }
+
   .catalog__painters {
     flex-direction: column-reverse;
+  }
+
+  .catalog__painters .card__img {
+    margin-bottom: 21px;
   }
 
   .catalog__card {
@@ -251,17 +263,33 @@
   }
 
   .catalog__accordion {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 }
 
 @media (max-width: 767px) {
+  .catalog {
+    margin-bottom: 35px;
+  }
+
+  .catalog__painters .card__img {
+    margin-bottom: 20px;
+  }
+
+  .catalog__painters .card__text--small {
+    margin-bottom: 12px;
+  }
+
   .catalog__description {
     display: none;
   }
 
   .accordion__header {
-    padding: 20px 0;
+    padding: 20px 0 22px;
+  }
+
+  .accordion__content {
+    padding: 25px 0 16px;
   }
 
   .accordion__heading {

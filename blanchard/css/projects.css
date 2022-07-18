@@ -140,20 +140,57 @@
   .partners__slider-btn--next {
     margin-left: 23px;
   }
-}
 
-@media (min-width: 768px) and (max-width: 1023px) {
   .partners__link {
     height: 128px;
   }
 
   .partners__logo {
-    width: 50%;
-    height: 50%;
+    width: 55%;
+    height: 55%;
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projects {
+    margin-bottom: 81px;
+  }
+
+  .projects__description {
+    margin-bottom: 30px;
+  }
+
+  .partners__heading {
+    margin-bottom: 30px;
+  }
+
+  .partners__slider-btn--prev {
+    margin-right: 24px;
+  }
+
+  .partners__slider-btn--next {
+    margin-left: 24px;
+  }
+
+  .partners__link {
+    height: 106px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects {
+    margin-bottom: 10px;
+  }
+
+  .partners__heading {
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+
+  .projects__description {
+    margin-bottom: 21px;
+  }
+
   .partners__slider-btn--prev {
     margin-right: 18px;
   }

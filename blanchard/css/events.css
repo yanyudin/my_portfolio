@@ -27,11 +27,12 @@
 
 .events__card .card__caption {
     flex-grow: 1;
-    padding: 0 50px 50px;
+    padding: 0 50px 40px;
 }
 
     
 .events__card .card__text--small {
+    margin-bottom: 14px;
     text-align: right;
 }
 
@@ -63,7 +64,13 @@
     text-align: center;
 }
 
-.swiper-pagination-bullet-active {
+.events__pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px !important;
+}
+
+.events__pagination .swiper-pagination-bullet-active {
     background-color: var(--text-color);
 }
 
@@ -95,20 +102,83 @@
     }
 }
 
-@media (min-width:  1024px) and (max-width: 1599px) {
-    .events__card .card__text--small {
-        padding: 0 34px 56px ;
+@media (min-width: 1024px) and (max-width: 1599px) {
+    .events {
+        margin-bottom: 77px;
     }
 
-    .events__card .card__preview  {
+    .events__card .card__img {
+        flex-basis: 199px;
+    }
+
+    .events__card .card__caption {
         padding: 0 34px 49px;
+    }
+
+    .events__card .card__text--small {
+        margin-bottom: 5px;
     }
 }
 
-@media (max-width: 767px) {
-    .events__card .card__text--small {
-        padding: 0 23px 49px;
+@media (max-width: 1023px) {
+    .events {
+        margin-bottom: 82px;
     }
+
+    .events__swiper {
+        margin-bottom: 25px;
+    }
+
+    .events__card .card__img {
+        flex-basis: 199px;
+        margin-bottom: 15px;
+    }
+
+    .events__card .card__caption {
+        padding: 0 18px 48px 33px;
+    }
+
+    .events__card .card__text--small {
+        margin-bottom: 3px;
+    }
+
+    .events__card .card__heading {
+        margin-bottom: 5px;
+    }
+
+    .events__card .card__heading,
+    .events__card .card__description {
+        padding-right: 28px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .events {
+        margin-bottom: 47px;
+    }
+
+    .events__swiper {
+        margin-bottom: 15px;
+    }
+
+    .events__card .card__img {
+        min-height: 199px;
+        margin-bottom: 18px;
+    }
+
+    .events__card .card__caption {
+        padding: 0 23px 48px;
+    }
+
+    .events__card .card__text--small {
+        margin-bottom: 9px;
+    }
+
+    .events__card .card__heading {
+        margin-bottom: 5px;
+    }
+
     .events__card .card__preview  {
         padding: 0 23px 49px;
     }

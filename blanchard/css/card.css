@@ -19,6 +19,7 @@
 }
 
 .card__text--small {
+    margin-bottom: 6px;
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
