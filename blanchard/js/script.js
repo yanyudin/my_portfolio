@@ -1,3 +1,6 @@
+const keys = {
+  ESC: 'Escape',
+};
 const DEFAULT_DELAY = 2000; // 2 Сек
 const DISABLE_ON_INTERACTION = false;
 const MOBILE_MAX_WIDTH = 1024;
@@ -316,7 +319,7 @@ $(document).ready(function() {
   }
 
   function openMenu() {
-    // prevActiveElem = document.activeElement;
+    prevActiveElem = document.activeElement;
     // siteContainer.children().each((index, child) => {
     //   if (child !== header) {
     //     child.inert = true;
@@ -330,12 +333,23 @@ $(document).ready(function() {
     // burger.toggleClass('header__burger--close');
     nav.toggleClass('header__nav--open');
     body.toggleClass('modal-active');
+    document.addEventListener('keydown', ({key}) => {
+      if (key === keys.ESC) {
+        closeMenu();
+      }
+    });
   }
 
   function closeMenu() {
     // burger.toggleClass('header__burger--close');
     nav.toggleClass('header__nav--open');
     body.toggleClass('modal-active');
+    document.removeEventListener('keydown', ({key}) => {
+      if (key === keys.ESC) {
+        closeMenu();
+      }
+    });
+    prevActiveElem.focus();
   }
 
   function showDropdownMenu({target}) {
