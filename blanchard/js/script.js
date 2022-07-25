@@ -114,10 +114,10 @@ $(document).ready(function() {
       type: "fraction",
     },
     mousewheel: {},
-    // autoplay: {
-    //   disableOnInteraction: DISABLE_ON_INTERACTION,
-    //   delay: DEFAULT_DELAY,
-    // },
+    autoplay: {
+      disableOnInteraction: DISABLE_ON_INTERACTION,
+      delay: DEFAULT_DELAY,
+    },
     breakpoints: {
       1660: {
         slidesPerView: 3,
@@ -155,10 +155,10 @@ $(document).ready(function() {
       clickable: true,
     },
     mousewheel: {},
-    // autoplay: {
-    //   disableOnInteraction: DISABLE_ON_INTERACTION,
-    //   delay: DEFAULT_DELAY,
-    // },
+    autoplay: {
+      disableOnInteraction: DISABLE_ON_INTERACTION,
+      delay: DEFAULT_DELAY,
+    },
     breakpoints: {
       1660: {
         slidesPerView: 3,
@@ -189,10 +189,10 @@ $(document).ready(function() {
       prevEl: '.partners__slider-btn--prev',
     },
     mousewheel: {},
-    // autoplay: {
-    //   disableOnInteraction: DISABLE_ON_INTERACTION,
-    //   delay: DEFAULT_DELAY,
-    // },
+    autoplay: {
+      disableOnInteraction: DISABLE_ON_INTERACTION,
+      delay: DEFAULT_DELAY,
+    },
     breakpoints: {
       1660: {
         slidesPerView: 3,
