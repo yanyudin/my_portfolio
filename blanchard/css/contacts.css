@@ -15,7 +15,7 @@
 }
 
 .contacts__address {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -160,11 +160,15 @@
 
 @media (max-width: 1599px) {
   .contacts__content {
-    padding: 42px 0;
+    padding: 42px 0 39px;
+  }
+
+  .contacts__input {
+    padding: 8px 10px 8px 22px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .contacts__content {
     padding: 42px 0 37px;
   }

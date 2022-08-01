@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding: 115px 0;
+  padding: 112px 0 114px;
   background-color: #666;
   color: var(--white-color);
 }
@@ -91,14 +91,22 @@
   }
 }
 
-@media (min-width: 768px)  and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hero {
-    padding: 108px 0 118px;
+    padding: 108px 0 116px;
+  }
+
+  .hero__content {
+    max-width: none;
   }
 
   .hero__heading {
     line-height: 95px;
-    margin-bottom: 0;
+    margin-bottom: -10px;
+  }
+
+  .hero__description {
+    margin-bottom: 134px;
   }
 }
 
