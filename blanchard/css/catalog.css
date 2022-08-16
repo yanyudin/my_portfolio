@@ -69,7 +69,7 @@
 
 
 .accordion__header:hover,
-.accordion__header:focus,
+.accordion__header:focus-visible,
 .accordion__header:active {
   z-index: 1;
 }
@@ -93,7 +93,7 @@
   color: var(--normal-color);
 }
 
-.accordion__header:focus .accordion__heading {
+.accordion__header:focus-visible .accordion__heading {
   background-color: var(--normal-color);
   color: var(--white-color);
 }
@@ -114,7 +114,7 @@
 }
 
 .accordion__header:hover .accordion__btn,
-.accordion__header:focus .accordion__btn {
+.accordion__header:focus-visible .accordion__btn {
   background-color: var(--light-color);
   border-color: var(--light-color);
 }
@@ -158,11 +158,11 @@
   text-underline-offset: 7px;
 }
 
-.catalog__painter-btn:hover:focus {
+.catalog__painter-btn:hover:focus-visible {
   text-decoration-color: var(--normal-color);
 }
 
-.catalog__painter-btn:focus {
+.catalog__painter-btn:focus-visible {
   background-color: var(--normal-color);
   color: var(--white-color);
 }
@@ -221,7 +221,7 @@
   color: var(--dark-color);
 }
 
-.catalog__empty-link:focus {
+.catalog__empty-link:focus-visible {
   background-color: var(--normal-color);
   color: var(--white-color);
 }

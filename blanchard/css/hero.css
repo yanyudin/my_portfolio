@@ -61,7 +61,7 @@
   border-color: var(--light-color);
 }
 
-.hero__btn:focus {
+.hero__btn:focus-visible {
   outline-color: var(--medium-color);
 }
 

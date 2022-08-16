@@ -1,7 +1,7 @@
 const keys = {
   ESC: 'Escape',
 };
-const DEFAULT_DELAY = 2000; // 2 Сек
+const DEFAULT_DELAY = 6000; // 6 Сек
 const DISABLE_ON_INTERACTION = false;
 const MOBILE_MAX_WIDTH = 1024;
 const GALLERY_LIST = [
@@ -67,8 +67,8 @@ $(document).ready(function() {
   const modalContentEl = modalEl.children('.gallery__modal-content');
   const searchFieldEl = $('.js-search');
   const searchInputEl = $('.js-search__input');
-  const searchBtnEl = $('.js-search__btn');
-  const searchBtnCloseEl = $('.js-search__btn-close');
+  const searchBtnEl = $('.js-search-btn');
+  const searchBtnCloseEl = $('.js-search-btn-close');
   const swiperHero = new Swiper('.hero__slider', {
     wrapperClass: 'hero__background',
     slideClass: 'hero__slide',
@@ -316,6 +316,8 @@ $(document).ready(function() {
     });
 
     myMap.geoObjects.add(myObject);
+    myMap.behaviors.disable('scrollZoom');
+    // myMap.behaviors.disable('drag');
   }
 
   function openMenu() {
@@ -333,22 +335,28 @@ $(document).ready(function() {
     // burger.toggleClass('header__burger--close');
     nav.toggleClass('header__nav--open');
     body.toggleClass('modal-active');
-    document.addEventListener('keydown', ({key}) => {
-      if (key === keys.ESC) {
-        closeMenu();
-      }
-    });
+    document.addEventListener('keydown', handlerESCKeyDown);
+    window.addEventListener('resize', handlerResizeWindow);
+  }
+
+  function handlerESCKeyDown({key}) {
+    if (key === keys.ESC) {
+      closeMenu();
+    }
+  }
+
+  function handlerResizeWindow({target}) {
+    if (target.innerWidth>= 1600) {
+      closeMenu();
+    }
   }
 
   function closeMenu() {
     // burger.toggleClass('header__burger--close');
     nav.toggleClass('header__nav--open');
     body.toggleClass('modal-active');
-    document.removeEventListener('keydown', ({key}) => {
-      if (key === keys.ESC) {
-        closeMenu();
-      }
-    });
+    document.removeEventListener('keydown', handlerESCKeyDown);
+    window.removeEventListener('resize', handlerResizeWindow);
     prevActiveElem.focus();
   }
 

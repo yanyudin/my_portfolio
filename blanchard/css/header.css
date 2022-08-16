@@ -62,11 +62,11 @@
 }
 
 .header__burger:hover > span,
-.header__burger:focus > span,
+.header__burger:focus-visible > span,
 .header__burger:hover::before,
-.header__burger:focus::before,
+.header__burger:focus-visible::before,
 .header__burger:hover::after,
-.header__burger:focus::after {
+.header__burger:focus-visible::after {
   width: 100%;
   background-color: var(--normal-color);
 }
@@ -152,12 +152,12 @@
   fill: var(--medium-color);
 }
 
-.header__login:focus {
+.header__login:focus-visible {
   color: var(--white-color);
   background-color: var(--dark-color);
 }
 
-.header__login:focus path {
+.header__login:focus-visible path {
   fill: var(--white-color);
 }
 
@@ -233,7 +233,7 @@
   color: var(--medium-color);
 }
 
-.nav__link:focus {
+.nav__link:focus-visible {
   color: var(--white-color);
   background-color: var(--dark-color);
 }
@@ -282,12 +282,12 @@
   stroke: var(--normal-color);
 }
 
-.menu__btn:focus {
+.menu__btn:focus-visible {
   color: var(--white-color);
   background-color: var(--dark-color);
 }
 
-.menu__btn:focus path {
+.menu__btn:focus-visible path {
   stroke: var(--white-color);
 }
 
@@ -381,7 +381,7 @@
 }
 
 .dropdown__btn:hover::before,
-.dropdown__btn:focus::before,
+.dropdown__btn:focus-visible::before,
 .dropdown__btn:active::before {
   opacity: 1;
 }
@@ -476,7 +476,7 @@
   display: flex;
   align-items: flex-end;
 }
-
+.header__btn--search,
 .search__btn {
   width: 23px;
   height: 22px;
@@ -504,7 +504,7 @@
 }
 
 .search__input:hover,
-.search__input:focus {
+.search__input:focus-visible {
   border-color: var(--medium-color);
 }
 
@@ -583,11 +583,13 @@
 
 @media (max-width: 1599px) {
   /* search */
+  .header__btn--search,
   .search__btn {
     width: 30px;
     height: 30px;
   }
 
+  .header__btn--search,
   .search__btn > svg {
     width: 30px;
     height: 30px;
@@ -596,11 +598,13 @@
 
 @media (max-width: 1023px) {
   /* search */
+  .header__btn--search,
   .search__btn {
     width: 27px;
     height: 27px;
   }
 
+  .header__btn--search,
   .search__btn > svg {
     width: 27px;
     height: 27px;

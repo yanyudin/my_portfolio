@@ -30,7 +30,7 @@
 }
 
 .footer__link:hover path,
-.footer__link:focus path {
+.footer__link:focus-visible path {
   fill: var(--white-color);
 }
 

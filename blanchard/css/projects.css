@@ -20,7 +20,7 @@
 }
 
 .projects__tooltip:hover > svg,
-.projects__tooltip:focus > svg {
+.projects__tooltip:focus-visible > svg {
   fill: var(--light-color);
 }
 
@@ -36,7 +36,7 @@
   stroke: var(--white-color);
 }
 
-.project__link {
+.projects__link {
   margin-left: -6px;
   padding: 0 6px;
   outline: none;
@@ -45,18 +45,18 @@
     background-color var(--transition);
 }
 
-.project__link:hover,
-.project__link:active {
+.projects__link:hover,
+.projects__link:active {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
 
-.project__link:focus {
+.projects__link:focus-visible {
   background-color: var(--normal-color);
   color: var(--white-color);
 }
 
-.project__link:active {
+.projects__link:active {
   color: var(--dark-color);
   background: none;
 }
@@ -121,7 +121,7 @@
     filter var(--transition);
 }
 
-.partners__link:focus,
+.partners__link:focus-visible,
 .partners__link:active {
   border-color: var(--normal-color);
 }

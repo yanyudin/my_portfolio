@@ -184,7 +184,7 @@ ul {
   background-color: var(--light-color);
 }
 
-.btn-arrow:focus,
+.btn-arrow:focus-visible,
 .btn-arrow:active {
   border-color: var(--normal-color);
 }
@@ -207,7 +207,7 @@ ul {
   background-color: var(--dark-color);
 }
 
-.btn-arrow--dark:focus,
+.btn-arrow--dark:focus-visible,
 .btn-arrow--dark:active {
   border-color: var(--black-color);
 }

@@ -74,7 +74,7 @@
     color: var(--dark-color);
 }
 
-.card__link:focus {
+.card__link:focus-visible {
     background-color: var(--normal-color);
     text-decoration: none;
     color: var(--white-color);

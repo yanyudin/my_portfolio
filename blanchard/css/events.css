@@ -45,6 +45,13 @@
     margin-bottom: 10px;
 }
 
+.events__card .card__heading,
+.events__card .card__description {
+    max-height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .events__slider-btn {
     position: absolute;
     top: 47%;
